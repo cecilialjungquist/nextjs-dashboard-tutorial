@@ -4,6 +4,10 @@
 
 // const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
 
+export async function GET(request: Request) {
+	return new Response("Seed route is working!");
+}
+
 // async function seedUsers() {
 //   await sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
 //   await sql`
